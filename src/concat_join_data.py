@@ -63,6 +63,9 @@ def corpus_stats(data_dir: str, out_dir:str,lang_pair_list: List[List[str]],spli
                 
                 
 def concat_data_1(in_src_fname:str,in_tgt_fname:str,out_fname:str):
+    '''
+    want to break the sentence error... 
+    '''
     
     with open(out_fname,"w",encoding="utf-8") as out_file,open(in_src_fname,"r",encoding="utf-8") as in_src_fname,open(in_tgt_fname,"r",encoding="utf-8") as in_tgt_fname:
         
