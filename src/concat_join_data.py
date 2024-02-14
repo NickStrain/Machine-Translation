@@ -70,7 +70,7 @@ def concat_data_1(in_src_fname:str,in_tgt_fname:str,out_fname:str):
     with open(out_fname,"w",encoding="utf-8") as out_file,open(in_src_fname,"r",encoding="utf-8") as in_src_fname,open(in_tgt_fname,"r",encoding="utf-8") as in_tgt_fname:
         
         for(a,b) in tqdm(zip(in_src_fname,in_tgt_fname)):
-            out_file.write(f"{a.strip()}\t{b.strip()}")
+            out_file.write(f"{a.strip()}\t{b.strip()}\n")
             
         
         
