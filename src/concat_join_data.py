@@ -62,9 +62,10 @@ def corpus_stats(data_dir: str, out_dir:str,lang_pair_list: List[List[str]],spli
                     lp_file.write(f"{src_lang}\t{tgt_lang}")
                 
                 
-def concat_data_1(in_src_fname:str,in_tgt_fname:str,out_fname:str):
+def concat_data_1(in_src_fname:str,in_tgt_fname:str,out_fname:str) -> None:
     '''
-    want to break the sentence error... 
+    Creating the meta data file which contain both language pairs seperated by "\t"
+    
     '''
     
     with open(out_fname,"w",encoding="utf-8") as out_file,open(in_src_fname,"r",encoding="utf-8") as in_src_fname,open(in_tgt_fname,"r",encoding="utf-8") as in_tgt_fname:
@@ -74,7 +75,8 @@ def concat_data_1(in_src_fname:str,in_tgt_fname:str,out_fname:str):
             
         
         
-         
+         return None
+     
             
         
         
