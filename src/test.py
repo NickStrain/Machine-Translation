@@ -2,7 +2,8 @@ import os,re,string
 import sys
 from lang_iterator import generate_lang_tag_iterator
 from tokenize import tokenizer_indic
-from indicnlp.normalize import indic_normalize
+from indicnlp.normalize.indic_normalize import IndicNormalizerFactory
+from preprocess_data import preprocess_line
 
 # if __name__ == "__main__":
 #     in_fname = "E:\\tamil to eng translation\Machine-Translation\output_data\data\\train_lang_pairs.txt"
@@ -21,19 +22,25 @@ from indicnlp.normalize import indic_normalize
 #         break
 
 '''
-tokenizering test sample
+Normalization 
+test ... 
 '''
 
 
-nor = indic_normalize.IndicNormalizerFactory()
-nore = nor.get_normalizer('ta')
+normfactory = IndicNormalizerFactory()
+remove_nuktas=False
+normalizer = normfactory.get_normalizer('ta')
 in_fname =  "E:\\tamil to eng translation\Machine-Translation\merge_data\eng_Latn-tam_Taml\\train-tam_Taml.txt"
 with open(in_fname,"r",encoding="utf-8") as in_fname:
     for a,i in enumerate(in_fname):
+        # i = "".join(i).split()
+        # print(i[5])
         print(i)
-        print(nore.normalize(i))
-        # print(i)
-        if a ==10:
+        print(preprocess_line(i,lang="ta",normalizer=normalizer))
+        # print(normalizer.normalize(i[6]))
+        
+        
+        if a ==50:
             break
     
 
