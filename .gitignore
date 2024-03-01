@@ -5,6 +5,7 @@ __pycache__/
 #data
 data
 merge_data
+output_data
 # C extensions
 *.so
 
