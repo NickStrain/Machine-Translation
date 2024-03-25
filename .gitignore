@@ -6,6 +6,9 @@ __pycache__/
 data
 merge_data
 output_data
+#lib
+fairseq
+sentencepiece
 # C extensions
 *.so
 

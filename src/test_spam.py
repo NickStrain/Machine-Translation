@@ -53,7 +53,7 @@ with open(in_fname,"r",encoding="utf-8") as in_fname:
         s = normalizatoin(src=i,tgt=i,pattern=r'''[$&+,:;=?@#|'"<>“.^*()%!-]''')
         print(s)
         # preprocess_line(i,lang="ta",normalizer=normalizer)
-        if a ==20:
+        if a == 50:
             break
 
 
