@@ -1,0 +1,6 @@
+pandas
+numpy
+tqdm
+
+// indic_nlp
+// eng_pre
