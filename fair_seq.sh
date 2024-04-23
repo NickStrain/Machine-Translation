@@ -1,4 +1,4 @@
-fairseq-train $"E:\tamil to eng translation\Machine-Translation\data-bin" \
+fairseq-train $"E:\tamil to eng translation\Machine-Translation\data-bin\data" \
 --max-source-positions=256 \
 --max-target-positions=256 \
 --source-lang=SRC \
