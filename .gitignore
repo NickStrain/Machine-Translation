@@ -9,6 +9,7 @@ merge_data
 output_data
 spm_models
 data-bin
+models
 #lib
 fairseq
 sentencepiece
