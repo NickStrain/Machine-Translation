@@ -1,6 +1,7 @@
 pandas
 numpy
 tqdm
+flask 
 
 // indic_nlp
 // eng_pre
